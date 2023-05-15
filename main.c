@@ -14,7 +14,7 @@ int main() {
 
     dict *dicionario = CriaDicionario(500000);
 
-    char *chave = alocaMemoria(NULL, sizeof(char)* strlen("sofia")+sizeof(char)*10);
+    char *chave = alocaMemoria(NULL, sizeof(char)* strlen("teste")+sizeof(char)*10);
 
     funcao a;
     a.f = printa_oi;
@@ -36,7 +36,7 @@ int main() {
     char numero[10];
     int i;
     for( i = 0; i<2000; i++){
-        chave = strcpy( chave,"sofia");
+        chave = strcpy( chave,"teste");
         snprintf(numero, sizeof(numero), "%d", i);
         strcat(chave, numero);
 
